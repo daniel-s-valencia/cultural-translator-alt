@@ -1,0 +1,35 @@
+var root = document.getElementsByTagName( "html" )[0]; root.setAttribute( "class", "js" );
+
+Hit enter to search or ESC to close
+
+Cultural Translation℠ Advocate.
+
+Strategist. Entrepreneur. Pastor.
+
+Navigate to the next section
+
+Clients and Testimonials
+
+Speaking Engagements &amp; Media
+
+Clients and Testimonials
+
+Clients and Testimonials
+
+Clients and Testimonials
+
+Speaking &#038; Media
+
+Speaking &#038; Media
+
+Speaking Engagements &amp; Media
+
+Ready to bring the Cultural Translation framework to your team?
+
+[email&#160;protected]
+
+for Services or Speaking Engagements
+
+Visit The Public Squared
+
+window.wpbCustomElement = 1;

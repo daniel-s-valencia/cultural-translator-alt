@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Testimonials from '../components/Testimonials';
+import Bio from '../components/Bio';
+---
+
+<Layout title="The Cultural Translator | Rich Tafel">
+	<main class="bg-white">
+		<Hero client:load />
+		<About client:load />
+    <Testimonials client:load />
+    <Bio client:load />
+	</main>
+</Layout>

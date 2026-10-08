@@ -1,0 +1,28 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <a href="/" class="font-serif font-bold text-xl tracking-tight flex items-center gap-2 text-black hover:text-gray-600 transition-colors">
+        <span class="w-4 h-4 bg-yellow-400 inline-block"></span>
+        Cultural Translator
+      </a>
+      
+      {/* Desktop Menu */}
+      <nav class="hidden md:flex gap-8 items-center">
+        <a href="/#about" class="text-sm font-bold uppercase tracking-widest text-black hover:text-yellow-500 transition-colors">Framework</a>
+        <a href="/traditional" class="text-sm font-bold uppercase tracking-widest text-black hover:text-yellow-500 transition-colors">Videos</a>
+        <a href="/quiz" class={`text-sm font-bold uppercase tracking-widest transition-colors ${currentPath === '/quiz' ? 'text-yellow-500' : 'text-black hover:text-yellow-500'}`}>Quiz</a>
+        <a href="https://www.simonandschuster.com/books/The-Cultural-Translator/Rich-Tafel/9781637636817" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-5 py-2.5 text-xs font-bold uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-colors">Pre-order</a>
+      </nav>
+
+      {/* Mobile Menu Button (simplified for now, a full implementation would use client JS) */}
+      <div class="md:hidden flex items-center gap-4">
+        <a href="/quiz" class="text-xs font-bold uppercase tracking-widest text-black hover:text-yellow-500 transition-colors">Quiz</a>
+        <a href="https://www.simonandschuster.com/books/The-Cultural-Translator/Rich-Tafel/9781637636817" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-3 py-1.5 text-xs font-bold uppercase tracking-widest hover:bg-yellow-400 hover:text-black transition-colors">Buy</a>
+      </div>
+    </div>
+  </div>
+</header>
